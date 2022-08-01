@@ -23,6 +23,7 @@ async def setup_pool(app: Sanic):
         max_size=app.config.MAX_SIZE,
         max_inactive_connection_lifetime=app.config.MAX_INACTIVE_CONNECTION_LIFETIME,
         max_queries=app.config.MAX_QUERIES,
+        statement_cache_size=0,
     )
 
 
